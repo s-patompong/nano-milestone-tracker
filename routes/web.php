@@ -21,7 +21,7 @@ Route::get('/', function () {
 
     $trackerData = $crawler->get();
 
-    SEOMeta::setTitle("{$trackerData->version}");
+    SEOMeta::setTitle("{$trackerData->version} - {$trackerData->percent}");
     SEOMeta::setDescription("NANO {$trackerData->version} is now {$trackerData->percent} completed.");
 
     OpenGraph::setDescription("NANO {$trackerData->version} is now {$trackerData->percent} completed.");

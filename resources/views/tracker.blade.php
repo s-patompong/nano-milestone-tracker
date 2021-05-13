@@ -56,6 +56,7 @@
         fetch(`/refresh`).then(res => res.json()).then(res => {
             document.getElementById('version').innerText = res.data.version;
             document.getElementById('percent').innerText = res.data.percent;
+            document.title = `${res.data.version} - ${res.data.percent} - NANO Milestone Tracker`;
         });
     }, 10000);
 
