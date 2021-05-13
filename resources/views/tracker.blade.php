@@ -22,6 +22,22 @@
     </div>
 </div>
 
+@if(app()->environment('production'))
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP945BWN04"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-JP945BWN04');
+    </script>
+@endif
+
 <script src="{{ asset('js/app.js') }}"></script>
 <script>
     const timeDom = document.getElementById('time');
