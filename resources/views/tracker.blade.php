@@ -3,6 +3,7 @@
 <head>
     {!! SEO::generate(true) !!}
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
